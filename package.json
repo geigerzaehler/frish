@@ -1,0 +1,27 @@
+{
+  "name": "frish",
+  "version": "0.1.0",
+  "description": "Reloads your browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:geigerzaehler/frish"
+  },
+  "keywords": [
+    "reload"
+  ],
+  "author": "Thomas Scholtes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geigerzaehler/frish/issues"
+  },
+  "homepage": "https://github.com/geigerzaehler/frish",
+  "dependencies": {
+    "debounce": "0.0.3",
+    "connect": "~2.12.0",
+    "socket.io": "~0.9.16"
+  }
+}
