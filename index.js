@@ -10,7 +10,7 @@ function makeReloader() {
   var sockets = [];
 
   function onconnect(socket) {
-    sockets.push(socket)
+    sockets.push(socket);
     socket.on('disconnet', function() {
       var index = sockets.indexOf(socket);
       sockets.splice(index, 1);
@@ -18,7 +18,7 @@ function makeReloader() {
   }
 
   function sendReload() {
-    console.log('Sending reload')
+    console.log('Sending reload');
     sockets.forEach(function(socket) {
       socket.emit('reload');
     });
@@ -29,7 +29,7 @@ function makeReloader() {
       port = 3008;
 
     var app = connect();
-    var server = http.createServer(app)
+    var server = http.createServer(app);
 
     app.use(connect.static(__dirname + '/client', {index: 'index.js'}));
     server.listen(port, function(){
